@@ -12,6 +12,7 @@
 		0B20EE0C1E445EF900F2DB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B20EE0A1E445EF900F2DB3D /* Main.storyboard */; };
 		0B20EE0E1E445EF900F2DB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B20EE0D1E445EF900F2DB3D /* Assets.xcassets */; };
 		0B20EE111E445EF900F2DB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B20EE0F1E445EF900F2DB3D /* LaunchScreen.storyboard */; };
+		0B20EE1C1E44B9E900F2DB3D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */; };
 		464C07FEDC2E4A0EBB1C9644 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DFFE664C16F8A186C5ADAE /* Pods_HelloWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0B20EE121E445EF900F2DB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B20EE191E44809600F2DB3D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B20EE1A1E44828900F2DB3D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0BC06409D967841B253C202D /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		58E44A7C04356AE3F9037B6B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		77DFFE664C16F8A186C5ADAE /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				0B20EE0D1E445EF900F2DB3D /* Assets.xcassets */,
 				0B20EE0F1E445EF900F2DB3D /* LaunchScreen.storyboard */,
 				0B20EE121E445EF900F2DB3D /* Info.plist */,
+				0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				0B20EE091E445EF800F2DB3D /* ViewController.swift in Sources */,
 				0B20EE071E445EF800F2DB3D /* AppDelegate.swift in Sources */,
+				0B20EE1C1E44B9E900F2DB3D /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,13 @@ import Spring
 
 class ViewController: UIViewController {
     @IBOutlet weak var todayView : SpringView!
+    let locationManager = LocationManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.startUpdatingLocation()
+        
+        
         animateAndShowToday()
         // Do any additional setup after loading the view, typically from a nib.
     }
