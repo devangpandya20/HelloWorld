@@ -62,19 +62,21 @@ class LocationManager : NSObject,CLLocationManagerDelegate{
     private func getCityFromLocation(){
         let geoCoder = CLGeocoder()
         geoCoder.reverseGeocodeLocation(self.currentLocation!) { (placemarks, error) in
-            guard let placeMark : CLPlacemark = placemarks?.last else {
+            guard let placeMark : CLPlacemark = placemarks?.last,
+                  let city : String = placeMark.locality  else {
                 return
             }
-            print(placeMark.locality)
-            print(placeMark.administrativeArea)
+//            print(placeMark.locality)
+            self.updateLocation(currentLocation: city)
+//            print(placeMark.administrativeArea)
         }
     }
     
-    private func updateLocation(currentLocation : CLLocation){
+    private func updateLocation(currentLocation : String){
         guard let delegate = self.delegate else{
             return
         }
-        delegate.tracingCity(cityName: "City")
+        delegate.tracingCity(cityName: currentLocation)
     }
     private func updateLocationDidFailWithError(error: Error) {
         

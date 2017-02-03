@@ -14,6 +14,10 @@
 		0B20EE111E445EF900F2DB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B20EE0F1E445EF900F2DB3D /* LaunchScreen.storyboard */; };
 		0B20EE1C1E44B9E900F2DB3D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */; };
 		464C07FEDC2E4A0EBB1C9644 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DFFE664C16F8A186C5ADAE /* Pods_HelloWorld.framework */; };
+		C5843F131E44FC1E003820A7 /* beerglass.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5843F0F1E44FC1E003820A7 /* beerglass.gif */; };
+		C5843F141E44FC1E003820A7 /* glassclink.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5843F101E44FC1E003820A7 /* glassclink.gif */; };
+		C5843F151E44FC1E003820A7 /* wine1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5843F111E44FC1E003820A7 /* wine1.gif */; };
+		C5843F161E44FC1E003820A7 /* wine2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5843F121E44FC1E003820A7 /* wine2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		0BC06409D967841B253C202D /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		58E44A7C04356AE3F9037B6B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		77DFFE664C16F8A186C5ADAE /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5843F0F1E44FC1E003820A7 /* beerglass.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = beerglass.gif; sourceTree = "<group>"; };
+		C5843F101E44FC1E003820A7 /* glassclink.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = glassclink.gif; sourceTree = "<group>"; };
+		C5843F111E44FC1E003820A7 /* wine1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wine1.gif; sourceTree = "<group>"; };
+		C5843F121E44FC1E003820A7 /* wine2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wine2.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 		0B20EDFA1E445EF700F2DB3D = {
 			isa = PBXGroup;
 			children = (
+				C5843F0E1E44FC1E003820A7 /* GIFs */,
 				0B20EE181E44802C00F2DB3D /* Git */,
 				0B20EE051E445EF800F2DB3D /* HelloWorld */,
 				0B20EE041E445EF800F2DB3D /* Products */,
@@ -68,11 +77,11 @@
 			children = (
 				0B20EE061E445EF800F2DB3D /* AppDelegate.swift */,
 				0B20EE081E445EF800F2DB3D /* ViewController.swift */,
+				0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */,
 				0B20EE0A1E445EF900F2DB3D /* Main.storyboard */,
 				0B20EE0D1E445EF900F2DB3D /* Assets.xcassets */,
 				0B20EE0F1E445EF900F2DB3D /* LaunchScreen.storyboard */,
 				0B20EE121E445EF900F2DB3D /* Info.plist */,
-				0B20EE1B1E44B9E900F2DB3D /* LocationManager.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -101,6 +110,18 @@
 				77DFFE664C16F8A186C5ADAE /* Pods_HelloWorld.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5843F0E1E44FC1E003820A7 /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				C5843F0F1E44FC1E003820A7 /* beerglass.gif */,
+				C5843F101E44FC1E003820A7 /* glassclink.gif */,
+				C5843F111E44FC1E003820A7 /* wine1.gif */,
+				C5843F121E44FC1E003820A7 /* wine2.gif */,
+			);
+			name = GIFs;
+			path = HelloWorld/GIFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B20EE111E445EF900F2DB3D /* LaunchScreen.storyboard in Resources */,
+				C5843F151E44FC1E003820A7 /* wine1.gif in Resources */,
+				C5843F131E44FC1E003820A7 /* beerglass.gif in Resources */,
 				0B20EE0E1E445EF900F2DB3D /* Assets.xcassets in Resources */,
+				C5843F161E44FC1E003820A7 /* wine2.gif in Resources */,
+				C5843F141E44FC1E003820A7 /* glassclink.gif in Resources */,
 				0B20EE0C1E445EF900F2DB3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6716EAAA856EC05D7054DF93 /* [CP] Embed Pods Frameworks */ = {
