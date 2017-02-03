@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import Spring
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var todayView : SpringView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        animateAndShowToday()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func animateAndShowToday(){
+        todayView.animation = "zoomIn"
+        todayView.animate()
+        todayView.delay = 2.0;
+        todayView.animateToNext {
+            self.todayView.animation = "zoomOut"
+            self.todayView.animateTo()
+        }
     }
 
 
