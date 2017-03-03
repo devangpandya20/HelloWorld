@@ -26,6 +26,7 @@ class ViewController: UIViewController, LocationServiceDelegate {
         self.todayView.textColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
         self.todayView.font = UIFont(name: "Avenir-Light", size: 30)
         self.todayView.textAlignment = NSTextAlignment.center
+        self.todayView.backgroundColor = UIColor.clear
         
         imageView.prepareForAnimation(withGIFNamed: "wine1")
         

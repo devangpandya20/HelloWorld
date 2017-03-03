@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CK1-Gt-v3o">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,27 +19,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGG-jJ-37H" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="67.5" y="287.5" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.08235294118" green="0.56078431370000004" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="67.5" y="345.5" width="185" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="GaZ-it-lJ6"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42H-Xy-zPN">
-                                <rect key="frame" x="16" y="642" width="343" height="25"/>
+                                <rect key="frame" x="16" y="442" width="288" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="JWI-qd-KNZ"/>
+                                    <constraint firstAttribute="height" constant="38" id="JWI-qd-KNZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpI-K6-VC1" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="21" y="5" width="333" height="261"/>
+                                <rect key="frame" x="21" y="74" width="278" height="261"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="261" id="iIo-8A-hGH"/>
                                 </constraints>
@@ -47,17 +46,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nGG-jJ-37H" firstAttribute="top" secondItem="xpI-K6-VC1" secondAttribute="bottom" constant="21.5" id="6ma-Ih-pGp"/>
+                            <constraint firstItem="nGG-jJ-37H" firstAttribute="top" secondItem="xpI-K6-VC1" secondAttribute="bottom" constant="10.5" id="6ma-Ih-pGp"/>
                             <constraint firstItem="nGG-jJ-37H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51.5" id="8zC-V3-AdB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="42H-Xy-zPN" secondAttribute="bottom" id="Gwm-Og-tiH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nGG-jJ-37H" secondAttribute="trailing" constant="51.5" id="H0J-oz-HrO"/>
-                            <constraint firstItem="xpI-K6-VC1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="HQZ-Je-rKg"/>
+                            <constraint firstItem="xpI-K6-VC1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="74" id="HQZ-Je-rKg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xpI-K6-VC1" secondAttribute="trailing" constant="5" id="PWu-fq-ApL"/>
                             <constraint firstItem="xpI-K6-VC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="iQb-5L-Irx"/>
                             <constraint firstItem="42H-Xy-zPN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rVX-WE-pTJ"/>
                             <constraint firstItem="42H-Xy-zPN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yYK-sC-HOF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qkg-T9-KfI"/>
                     <connections>
                         <outlet property="cityLabel" destination="42H-Xy-zPN" id="eSE-18-GE2"/>
                         <outlet property="imageView" destination="xpI-K6-VC1" id="SKo-n7-DKw"/>
@@ -65,6 +65,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zPV-cx-pfp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CK1-Gt-v3o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ar7-LG-8YS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ERt-5I-j7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkl-xL-ShQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
